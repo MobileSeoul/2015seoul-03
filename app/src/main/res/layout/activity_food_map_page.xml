@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="choiyh1006.example.com.seouldal2.foodMapPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#0b2639">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/back_btn"
+                    android:src="@drawable/back_btn"
+                    android:onClick="onClick"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:id="@+id/title"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:id="@+id/fragment"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:id="@+id/lay"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#393939"
+                    android:text="꼭그닭(빠네치킨)"
+                    android:textSize="20dp"
+                    android:id="@+id/name"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#393939"
+                    android:text="착한맛집, 담백한맛, 캐주얼"
+                    android:textSize="10dp"
+                    android:id="@+id/desc"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/name"
+                    />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6b6b6b"
+                    android:text="강남역"
+                    android:textSize="10dp"
+                    android:id="@+id/loc1"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/desc"
+                    />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6b6b6b"
+                    android:text="ADD 서울 강남구 역삼동 817-33"
+                    android:textSize="10dp"
+                    android:id="@+id/loc2"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:layout_below="@+id/loc1"
+                    />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6b6b6b"
+                    android:text="010-8147-9308"
+                    android:textSize="10dp"
+                    android:id="@+id/call"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="2dp"
+                    android:layout_below="@+id/loc2"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/photo"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignTop="@+id/name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/f0101"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/btn_like"
+                android:onClick="onClick"
+                android:id="@+id/like_btn"
+                />
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

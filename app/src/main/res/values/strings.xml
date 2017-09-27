@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Seouldal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_food_page">foodPage</string>
+    <string name="title_activity_scene_page">scenePage</string>
+    <string name="title_activity_festival_page">festivalPage</string>
+    <string name="title_activity_rest_page">restPage</string>
+    <string name="title_activity_detail_page">detailPage</string>
+    <string name="title_activity_food_detail_page">foodDetailPage</string>
+    <string name="title_activity_scene_detail_page">sceneDetailPage</string>
+    <string name="title_activity_festival_detail_page">festivalDetailPage</string>
+    <string name="title_activity_food_map_page">foodMapPage</string>
+    <string name="title_activity_scene_map_page">sceneMapPage</string>
+    <string name="title_activity_festival_map_page">festivalMapPage</string>
+
+</resources>
